@@ -13,6 +13,7 @@ case "$1" in
         exit 1
     fi
     : ADD START ACTIONS HERE
+    chmod +x $QPKG_ROOT/pure-dns
     $QPKG_ROOT/pure-dns &
     ;;
 
