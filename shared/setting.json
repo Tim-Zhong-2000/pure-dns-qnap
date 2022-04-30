@@ -1,0 +1,23 @@
+{
+  "net": "udp",
+  "listen": "192.168.123.60:53",
+  "timeout": 1500,
+  "upstreams": [
+    {
+      "net": "https",
+      "address": "dns.rubyfish.cn/dns-query"
+    },
+    {
+      "net": "https",
+      "address": "doh.pub/dns-query"
+    },
+    {
+      "net": "quic",
+      "address": "dns.adguard.com:853"
+    },
+    {
+      "net": "sdns",
+      "address": "AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20"
+    }
+  ]
+}
